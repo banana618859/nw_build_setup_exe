@@ -1,0 +1,38 @@
+{
+  "name": "yiz-app",
+  "appName": "好的app",
+  "version": "2.0.0",
+  "description": "a app",
+  "main": "./index.html",
+  "author": "yiz",
+  "private": true,
+  "scripts": {
+    "dev": "nw .",
+    "build": "node ./builder.js"
+  },
+  "dependencies": {
+    "nw": "0.14.7-sdk"
+  },
+  "devDependencies": {
+    "iconv-lite": "^0.4.15",
+    "innosetup-compiler": "^5.5.9",
+    "nw-builder": "^3.4.1"
+  },
+  "manifestUrl": "http://localhost:8080/releases/upgrade.json",
+  "window": {
+    "title": "vue-nw-seed",
+    "toolbar": false,
+    "width": 800,
+    "height": 500,
+    "min_width": 800,
+    "min_height": 500,
+    "resizable": true,
+    "frame": true,
+    "kiosk": false,
+    "icon": "/static/logo.png",
+    "show_in_taskbar": true
+  },
+  "nodejs": true,
+  "js-flags": "--harmony",
+  "node-remote": "<all_urls>"
+}
