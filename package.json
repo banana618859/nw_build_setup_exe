@@ -1,26 +1,49 @@
 {
-  "name": "yiz-app",
-  "appName": "好的app",
+  "name": "yizapp",
   "version": "2.0.0",
-  "description": "a app",
-  "main": "./index.html",
-  "author": "yiz",
   "private": true,
-  "scripts": {
-    "dev": "nw .",
-    "build": "node ./builder.js"
+  "description": "a app",
+  "author": {
+    "name": "yiz"
   },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "start /b nw .&& npm run serve"
+  },
+  "main": "http://localhost:8000",
   "dependencies": {
-    "nw": "0.14.7-sdk"
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^7.0.0",
     "iconv-lite": "^0.4.15",
     "innosetup-compiler": "^5.5.9",
+    "nw": "^0.37.0-sdk",
     "nw-builder": "^3.4.1"
   },
-  "manifestUrl": "http://localhost:8080/releases/upgrade.json",
+  "_id": "yizapp@2.0.0",
+  "appName": "好的app",
+  "js-flags": "--harmony",
+  "node-remote": "<all_urls>",
+  "nodejs": true,
+  "readme": "ERROR: No README data found!",
   "window": {
-    "title": "vue-nw-seed",
+    "title": "vueapp",
     "toolbar": false,
     "width": 800,
     "height": 500,
@@ -31,8 +54,5 @@
     "kiosk": false,
     "icon": "/static/logo.png",
     "show_in_taskbar": true
-  },
-  "nodejs": true,
-  "js-flags": "--harmony",
-  "node-remote": "<all_urls>"
+  }
 }
