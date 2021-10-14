@@ -3,7 +3,7 @@
  * @Author: yizheng.yuan
  * @Date: 2021-08-31 11:45:49
  * @LastEditors: yizheng.yuan
- * @LastEditTime: 2021-10-14 11:18:47
+ * @LastEditTime: 2021-10-14 12:15:12
  */
 const innosetupCompiler = require('innosetup-compiler');
 const path = require('path');
@@ -11,6 +11,9 @@ const fs = require('fs');
 const iconv = require('iconv-lite');
 
 const rootPath = path.resolve(__dirname, '../');
+
+// 拷贝package.json到dist目录
+fs.copyFileSync(path.resolve(__dirname, '../package_exe.json'), path.resolve(__dirname, '../dist/package.json'));
 
 // // `./package.json`
 const tmpJson = require(path.resolve(rootPath, './package.json'));

@@ -14,7 +14,7 @@
     "lint": "vue-cli-service lint",
     "dev": "start /b nw .&& npm run serve"
   },
-  "main": "http://localhost:8000",
+  "main": "index.html",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
